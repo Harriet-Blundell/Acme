@@ -1,0 +1,27 @@
+{
+  "name": "Static-Content-Challenge",
+  "version": "1.0.0",
+  "description": "**NB: Please do not fork this repository, to avoid your solution being visible from this repository's GitHub page. Please clone this repository and submit your solution as a separate repository.**",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./content/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Harriet-Blundell/Static-Content-Challenge.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Harriet-Blundell/Static-Content-Challenge/issues"
+  },
+  "homepage": "https://github.com/Harriet-Blundell/Static-Content-Challenge#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
