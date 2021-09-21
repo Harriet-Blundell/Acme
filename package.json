@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon ./content/app.js"
+    "start": "nodemon listen.js"
   },
   "repository": {
     "type": "git",
@@ -19,7 +19,10 @@
   },
   "homepage": "https://github.com/Harriet-Blundell/Static-Content-Challenge#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "consolidate": "^0.16.0",
+    "express": "^4.17.1",
+    "mustache": "^4.2.0",
+    "showdown": "^1.9.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.12"
