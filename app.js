@@ -12,46 +12,50 @@ app.engine('html', engine.mustache);
 app.set('view engine', 'html');
 
 app.get('/', function (req, res) {
-    res.send('This is the homepage');
+    res.status(200).send('This is the homepage');
 });
 
 app.get('/about-page', (req, res) => {
-    const markdownContent = './content/about-page/index.md';
+    const path = req.route.path;
+    const markdownContent = `./content/${path}/index.md`;
     fs.readFile(markdownContent, 'utf8', (err, markdownContent) => {
         if (err) throw err;
 
         const html = converter.makeHtml(markdownContent);
-        res.render("template", { content: html })
+        res.status(200).render("template", { content: html })
     })
 });
 
 app.get('/blog/june/company-update', (req, res) => {
-    const markdownContent = './content/blog/june/company-update/index.md';
+    const path = req.route.path;
+    const markdownContent = `./content/${path}/index.md`;
     fs.readFile(markdownContent, 'utf8', (err, markdownContent) => {
         if (err) throw err;
 
         const html = converter.makeHtml(markdownContent);
-        res.render("template", { content: html })
+        res.status(200).render("template", { content: html })
     })
 });
 
 app.get('/jobs', (req, res) => {
-    const markdownContent = './content/jobs/index.md';
+    const path = req.route.path;
+    const markdownContent = `./content/${path}/index.md`;
     fs.readFile(markdownContent, 'utf8', (err, markdownContent) => {
         if (err) throw err;
 
         const html = converter.makeHtml(markdownContent);
-        res.render("template", { content: html })
+        res.status(200).render("template", { content: html })
     })
 });
 
 app.get('/valves', (req, res) => {
-    const markdownContent = './content/valves/index.md';
+    const path = req.route.path;
+    const markdownContent = `./content/${path}/index.md`;
     fs.readFile(markdownContent, 'utf8', (err, markdownContent) => {
         if (err) throw err;
 
         const html = converter.makeHtml(markdownContent);
-        res.render("template", { content: html })
+        res.status(200).render("template", { content: html })
     })
 });
 

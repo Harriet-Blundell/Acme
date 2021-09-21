@@ -4,7 +4,7 @@
   "description": "**NB: Please do not fork this repository, to avoid your solution being visible from this repository's GitHub page. Please clone this repository and submit your solution as a separate repository.**",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha spec/spec.app.js",
     "start": "nodemon listen.js"
   },
   "repository": {
@@ -19,10 +19,13 @@
   },
   "homepage": "https://github.com/Harriet-Blundell/Static-Content-Challenge#readme",
   "dependencies": {
+    "chai": "^4.3.4",
     "consolidate": "^0.16.0",
     "express": "^4.17.1",
+    "mocha": "^9.1.1",
     "mustache": "^4.2.0",
-    "showdown": "^1.9.1"
+    "showdown": "^1.9.1",
+    "supertest": "^6.1.6"
   },
   "devDependencies": {
     "nodemon": "^2.0.12"
