@@ -8,7 +8,7 @@ exports.getPage = (req, res) => {
     const markdownContent = `./content/${baseUrl}/index.md`;
 
     fs.readFile(markdownContent, 'utf8', (err, markdownContent) => {
-        if (err) routeError(req, res)
+        if (err) routeError(res)
 
         const html = converter.makeHtml(markdownContent);
         res.status(200).render("template", { content: html })
