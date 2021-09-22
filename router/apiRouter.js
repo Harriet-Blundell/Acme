@@ -1,13 +1,7 @@
 const apiRouter = require("express").Router();
 
-const aboutRouter = require("./about.router.js");
-const blogRouter = require('./blog.router.js');
-const jobsRouter = require("./jobs.router.js");
-const valvesRouter = require("./valves.router.js");
+const router = require("./page.router.js");
 
-apiRouter.use("/", aboutRouter);
-apiRouter.use("/", blogRouter);
-apiRouter.use("/", jobsRouter);
-apiRouter.use("/", valvesRouter);
+apiRouter.use("/", router);
 
 module.exports = apiRouter;
