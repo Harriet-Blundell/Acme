@@ -1,4 +1,4 @@
-# This is the About page
+# ABOUT PAGE
 
 **Acme Co. is a reputable maker of widgets and is an international brand.**
 
