@@ -1,4 +1,4 @@
-#<div align="center">This is the About page</div>
+# This is the About page
 
 **Acme Co. is a reputable maker of widgets and is an international brand.**
 
