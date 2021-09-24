@@ -1,25 +1,65 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Spartan:wght@100&display=swap');
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Spartan', sans-serif;
     background-color: #353D40;
+}
+
+.blog-title {
+    justify-content: space-between;
+    font-size: 60px;
+    color: #D9CCB4;
+    position: absolute;
+    bottom: 40%;
+    right: 50%;
+    padding-left: 30px;
+    transform: translate(-50, 0%);
+}
+
+.valves-title {
+    justify-content: space-between;
+    font-size: 60px;
+    color: #D9CCB4;
+    position: fixed;
+    bottom: 60%;
+    padding-left: 30px;
+}
+
+.title {
+    margin: 50px;
+    position: fixed;
 }
 
 h1 {
     font-size: 110px;
-    line-height: 178px;
     position: relative;
-    align-items: center;
-    text-align: center;
+    top: 20vh;
+    text-align: left;
     color: #F2B138;
 }
 
-p {
-    color: #D9CCB4;
-    font-weight: lighter;
-    font-size: 40px;
-    line-height: 50px;
+h2 {
+    font-size: 110px;
+    text-align: center;
+    color: #F2B138;
+    top: 30vh;
     position: relative;
-    align-items: center;
+}
+
+.main-content {
+    font-size: 50px;
+    padding-right: 30px;
+    color: #D9CCB4;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(0, -50%);
+}
+
+.bottom-content {
+    color: #F2B138;
+    position: fixed;
+    bottom: 0;
+    width:100%;
     text-align: center;
 }
