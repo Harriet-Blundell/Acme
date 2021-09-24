@@ -17,7 +17,7 @@ describe('GET about page', () => {
 
     it('should display the correct header tag and content in the about page markdown file', () => {
         return request(app).get("/about-page").then(res => {
-            expect(res.text).to.include(`<h1 id="thisistheaboutpage">This is the About page</h1>`)
+            expect(res.text).to.include(`<h1 id="about">ABOUT</h1>\n<h1 id="page">PAGE.</h1>`)
         })
     })
 
@@ -44,7 +44,7 @@ describe('GET blog page', () => {
 
     it('should display the correct header tag and content in the blog page markdown file', () => {
         return request(app).get("/blog/june/company-update").then(res => {
-            expect(res.text).to.include(`<h1 id="junecompanyupdate">June Company Update</h1>`)
+            expect(res.text).to.include(`h1 id="junecompanyupdate">JUNE COMPANY UPDATE.</h1>`)
         })
     })
 
@@ -71,7 +71,7 @@ describe('GET jobs page', () => {
 
     it('should display the correct header tag and content in the blog page markdown file', () => {
         return request(app).get("/jobs").then(res => {
-            expect(res.text).to.include(`<h1 id="jobsatacmeco">Jobs at Acme Co.</h1>`)
+            expect(res.text).to.include(`<h1 id="jobsat">JOBS at</h1>\n<h1 id="acmeco">Acme Co.</h1>`)
         })
     })
 
@@ -98,7 +98,7 @@ describe('GET valves page', () => {
 
     it('should display the correct header tag and content in the blog page markdown file', () => {
         return request(app).get("/valves").then(res => {
-            expect(res.text).to.include(`<h1 id="valves">Valves</h1>`)
+            expect(res.text).to.include(`<h1 id="valves">VALVES.</h1>`)
         })
     })
 
