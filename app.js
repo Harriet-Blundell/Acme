@@ -10,8 +10,4 @@ app.set('view engine', 'html');
 
 app.use("/*", getPage);
 
-app.get('/', (req, res) => {
-    res.send("ACME.")
-})
-
 module.exports = app;
