@@ -9,7 +9,7 @@
 
 ## General Information:
 
-This project, Acme Co, is a node.js application that uses static endpoints such as "/about-page", "/jobs", "blog/june/company-update", and "/valves" and serves them to the user through a website. The user is also able to add extra folders to 'content' folder.
+This project, Acme Co, is a node.js application that uses static endpoints, such as **"/about-page", "/jobs", "blog/june/company-update", and "/valves"** and serves them to the user through a website. The user is also able to add extra folders to 'content' folder.
 
 To view a hosted version of this application please go to: https://acme-application.herokuapp.com/
 
