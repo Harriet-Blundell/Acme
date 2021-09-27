@@ -2,6 +2,27 @@ const { expect } = require('chai');
 const request = require('supertest');
 const app = require('../app');
 
+describe('GET home page', () => {
+    it('returns a 301 HTTP status code when no endpoint is entered', () => {
+        return request(app).get("/").then(res => {
+            expect(res.status).to.eql(301)
+        })
+    })
+
+    it('should display the title of the template file', () => {
+        return request(app).get("/home").then(res => {
+            expect(res.text).to.include("<title>Welcome to Acme</title>")
+        })
+    })
+
+    it('returns a 200 HTTP status code when endpoint matches home page', () => {
+        return request(app).get("/home").then(res => {
+            expect(res.status).to.eql(200)
+            expect(res.text).to.include(`<h2 id="acmeco">ACME Co.</h2>`)
+        })
+    })
+})
+
 describe('GET about page', () => {
     it('returns a 200 HTTP status code when endpoint matches about page', () => {
         return request(app).get("/about-page").then(res => {
@@ -113,6 +134,13 @@ describe('GET unknown URL', () => {
     it('should return a 404 HTTP status when URL does not match content folders', () => {
         return request(app).get("/unknown-folder/does-not-exist/this-should-not-work").then(res => {
             expect(res.status).to.eql(404);
+            expect(res.text).to.include("<h1>Sorry, page not found.</h1>")
+        })
+    })
+
+    it('should display the title of the error template file', () => {
+        return request(app).get("/unknown-folder/does-not-exist/this-should-not-work").then(res => {
+            expect(res.text).to.include("<title>404 Page Not Found</title>")
         })
     })
 })
