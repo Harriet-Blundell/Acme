@@ -8,6 +8,10 @@ app.set('views', __dirname + '/views');
 app.engine('html', engine.mustache);
 app.set('view engine', 'html');
 
+app.get("/", (req, res) => {
+    res.redirect(301, "home");
+});
+
 app.use("/*", getPage);
 
 module.exports = app;
