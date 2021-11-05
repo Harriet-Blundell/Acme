@@ -1,4 +1,4 @@
-<div class="title" markdown="1">
+<div class="about-page-title" markdown="1">
 
 # ABOUT
 # PAGE.

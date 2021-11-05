@@ -24,7 +24,12 @@ body {
     padding-left: 30px;
 }
 
-.title {
+.about-page-title {
+    margin: 50px;
+    position: fixed;
+}
+
+.jobs-title {
     margin: 50px;
     position: fixed;
 }
@@ -74,7 +79,13 @@ h2 {
   }
 
   @media only screen and (max-width: 1000px) {
-      .title {
+      .about-page-title {
+          position: fixed;
+          margin: 0;
+          padding-left: 30px;
+      }
+
+      .jobs-title {
           position: fixed;
           margin: 0;
           padding-left: 30px;

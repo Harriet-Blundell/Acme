@@ -1,4 +1,4 @@
-<div class="title" markdown="1">
+<div class="jobs-title" markdown="1">
 
 # JOBS at 
 # Acme Co.
